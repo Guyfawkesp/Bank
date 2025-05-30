@@ -15,8 +15,8 @@ We utilize a dataset related to **marketing bank products over the telephone**, 
 
 The data is from a **Portuguese banking institution** and contains information about the results of various direct marketing campaigns. The goal is to predict whether a client will subscribe to a term deposit based on their attributes and past interactions.
 
-- 📂 Source: [UCI Machine Learning Repository - Bank Marketing Dataset](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
-- 📄 More info: [Related research article (Moro et al., 2014)](https://www.sciencedirect.com/science/article/pii/S0957417414001166)
+-  Source: [UCI Machine Learning Repository - Bank Marketing Dataset](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
+-   More info: [Related research article (Moro et al., 2014)](https://www.sciencedirect.com/science/article/pii/S0957417414001166)
 
 ## Results Summary
 
@@ -36,6 +36,4 @@ The table below summarizes the training time, accuracy scores, and best cross-va
 - **SVM** achieved strong accuracy but at a very high computational cost.
 - **KNN** provided competitive performance with moderate training time.
 
-## Getting Started
 
-To run the notebook and experiment with these models:
