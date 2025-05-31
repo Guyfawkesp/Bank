@@ -20,20 +20,21 @@ The data is from a **Portuguese banking institution** and contains information a
 
 ## Results Summary
 
-The table below summarizes the training time, accuracy scores, and best cross-validation accuracy for each classifier:
+The table below summarizes the training time, accuracy, recall scores, and best cross-validation performance for each classifier:
 
-| Model                   | Train Time (s) | Train Accuracy | Test Accuracy | Best CV Accuracy |
-|------------------------|----------------|----------------|----------------|------------------|
-| KNeighborsClassifier   | 3.21           | 0.9142         | 0.9016         | 0.8966           |
-| LogisticRegression     | 1.90           | 0.9101         | 0.9164         | 0.9099           |
-| DecisionTreeClassifier | 0.84           | 0.9160         | 0.9185         | 0.9122           |
-| SVC                    | 814.00         | 0.9251         | 0.9125         | 0.9051           |
+| Model                   | Train Time (s) | Train Accuracy | Test Accuracy | Train Recall | Test Recall | Best CV Accuracy | Best CV Recall |
+|------------------------|----------------|----------------|----------------|---------------|--------------|------------------|----------------|
+| KNeighborsClassifier   | 3.23           | 1.0000         | 0.8973         | 1.0000        | 0.3707       | 0.8880           | 0.3384         |
+| LogisticRegression     | 1.85           | 0.8592         | 0.8654         | 0.8855        | 0.9116       | 0.8589           | 0.8790         |
+| DecisionTreeClassifier | 0.88           | 0.9374         | 0.9142         | 0.6307        | 0.5183       | 0.9077           | 0.5213         |
+| SVC                    | 824.20         | 0.8475         | 0.8485         | 0.9119        | 0.9267       | 0.8469           | 0.9089         |
 
 ## Key Takeaways
 
-- **Decision Tree** achieved the best **test accuracy** and **cross-validation score** overall.
-- **Logistic Regression** performed well with minimal training time, making it an efficient baseline model.
-- **SVM** achieved strong accuracy but at a very high computational cost.
-- **KNN** provided competitive performance with moderate training time.
+- **Support Vector Machine (SVM)** achieved the highest **test recall** (0.9267) and strong **cross-validation recall** (0.9089), making it highly effective for identifying positive cases — but at a significant **computational cost** (824s).
+- **Logistic Regression** offered an excellent **balance of recall (0.9116)**, good **accuracy**, and very **low training time**, making it a highly efficient and practical model.
+- **Decision Tree** showed strong **test accuracy (0.9142)** and **cross-validation accuracy (0.9077)**, but recall was moderate, which may limit its usefulness in recall-critical applications.
+- **K-Nearest Neighbors (KNN)** achieved perfect training metrics (1.0000) but **poor test recall (0.3707)**, suggesting it may be overfitting and not generalizing well.
+
 
 
