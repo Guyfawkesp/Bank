@@ -35,6 +35,7 @@ The table below summarizes the training time, accuracy, recall scores, and best 
 - **Logistic Regression** offered an excellent **balance of recall (0.9116)**, good **accuracy**, and very **low training time**, making it a highly efficient and practical model.
 - **Decision Tree** showed strong **test accuracy (0.9142)** and **cross-validation accuracy (0.9077)**, but recall was moderate, which may limit its usefulness in recall-critical applications.
 - **K-Nearest Neighbors (KNN)** achieved perfect training metrics (1.0000) but **poor test recall (0.3707)**, suggesting it may be overfitting and not generalizing well.
+- **Improving Model** Recall can be improved for Logistic Regression, KNN but comes at a cost of precision.We have to find the right balance here.
 
 
 
